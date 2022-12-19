@@ -1,0 +1,405 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body {
+    background: #0D1323;
+}
+
+main {
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-report {
+    width: 310px;
+}
+
+.user-data {
+    border-radius: 10px;
+    background-color: #5746EA;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.user-img img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.user-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.report-information {
+    margin-left: 20px;
+}
+
+.report-text {
+    font-size: 12px;
+    color: #a2a3b6;
+}
+
+.user-name {
+    font-weight: 300;
+}
+
+.user-calendar {
+    height: 80px;
+    border-radius: 10px;
+    background: #1D204B;
+    display: flex;
+    z-index: -1;
+    margin-top: -20px;
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+
+.daily {
+    color: #575A9C;
+}
+
+.daily:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.weekly {
+    cursor: pointer;
+
+}
+
+.monthly {
+    color: #575A9C;
+}
+
+.monthly:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+.card-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 310px;
+
+    margin-top: 20px;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1D204B;
+}
+
+.more-inf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-card:hover {
+    cursor: pointer;
+    background-color: #34397B;
+
+}
+
+.more-inf:hover {
+    cursor: pointer;
+}
+
+.user-plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activities {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hours {
+    font-size: 28px;
+}
+
+.previous-active {
+    color: #a8a9c3;
+    font-size: 14px;
+}
+
+.bottom-card1,
+.bottom-card2,
+.bottom-card3,
+.bottom-card4,
+.bottom-card5,
+.bottom-card6 {
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    z-index: -1;
+    margin-bottom: -40px;
+    height: 80px;
+    overflow: hidden;
+
+}
+
+.bottom-card1 img,
+.bottom-card2 img,
+.bottom-card3 img,
+.bottom-card4 img,
+.bottom-card5 img,
+.bottom-card6 img {
+    margin-top: -5px;
+}
+
+.bottom-card1 {
+    background-color: #FF8B64;
+}
+
+.bottom-card2 {
+    background-color: #56C2E6;
+}
+
+.bottom-card3 {
+    background-color: #FF5E7D;
+}
+
+.bottom-card4 {
+    background-color: #4BCF83;
+}
+
+.bottom-card5 {
+    background-color: #7235D1;
+}
+
+.bottom-card6 {
+    background-color: #F1C75B;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 470px) {
+    main {
+        flex-direction: initial;
+        justify-content: center;
+        align-items: initial;
+        margin-top: 100px;
+    }
+
+    .user-report {
+        margin-right: 20px;
+        width: initial;
+
+    }
+
+    .user-data {
+        width: 200px;
+        height: 310px;
+        border-radius: 15px;
+        flex-direction: column;
+        padding: 30px;
+        align-items: initial;
+    }
+
+    .card-block {
+        height: 460px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: initial;
+        width: 660px;
+    }
+
+    .user-calendar {
+        width: 200px;
+        height: 150px;
+        border-radius: 15px;
+        flex-direction: column;
+        margin-top: -20px;
+        padding: 30px 30px 10px 30px;
+        justify-content: space-around;
+    }
+
+    .report-information {
+        margin-left: initial;
+        margin-top: 30px;
+    }
+
+    .report-text {
+        font-size: 18px;
+    }
+
+    .user-name {
+        font-size: 38px;
+
+        font-weight: 300;
+    }
+
+    .card {
+        width: 200px;
+        margin-top: initial;
+        margin: 0 20px 20px 0;
+    }
+
+    .top-card {
+        height: 170px;
+        justify-content: space-around;
+        border-radius: 15px;
+    }
+
+    .activities {
+        margin-top: initial;
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .hours {
+        font-size: 44px;
+    }
+
+    .previous-active {
+        margin-top: 10px;
+    }
+
+    .bottom-card1,
+    .bottom-card2,
+    .bottom-card3,
+    .bottom-card4,
+    .bottom-card5,
+    .bottom-card6 {
+        border-radius: 15px;
+    }
+    footer {
+        position: absolute;
+        top: 1550px;
+    }
+}
+@media screen and (min-width: 717px) {
+    footer {
+        position: absolute;
+        top: 850px;
+        left: 20vw;
+    }
+}
+@media screen and (min-width: 920px) {
+    footer {
+        position: initial;
+    }
+}
+@media screen and (min-width: 1324px) {
+
+    .user-data {
+        width: 300px;
+        height: 460px;
+    }
+
+    .card-block {
+        height: 460px;
+        width: 960px;
+    }
+
+    .user-calendar {
+        width: 300px;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+    .report-text {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .user-name {
+        font-size: 52px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .top-card {
+        height: 270px;
+    }
+
+
+    .hours {
+        font-size: 64px;
+    }
+
+    .previous-active {
+        margin-top: 10px;
+    }
+
+    .daily {
+        font-size: 24px;
+    }
+
+
+    .weekly {
+        font-size: 24px;
+    }
+
+    .monthly {
+        font-size: 24px;
+    }
+
+    .plan {
+        font-size: 34px;
+    }
+
+    .more-inf img {
+        width: 35px;
+        height: 10px;
+    }
+
+    .previous-active {
+        font-size: 24px;
+    }
+
+    .user-img img {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .user-img {
+        width: 160px;
+        height: 160px;
+    }
+}
